@@ -7,7 +7,7 @@ userRouter.get('/', (req: Request, res:Response) => {
 })
 
 userRouter.post('/register', (req:Request , res:Response) => {
-    res.send('Data send')
+    res.json({message : `${req.body.name} is registered`})
 })
 
 export default userRouter
